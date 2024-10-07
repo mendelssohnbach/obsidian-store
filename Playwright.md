@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "codegen": "npx playwright codegen http://localhost:3000",
-    "test:ui": "npx playwright test --ui"
+    "codegen": "playwright codegen http://localhost:3000",
+    "test:ui": "playwright test --ui"
   },
 ```
 

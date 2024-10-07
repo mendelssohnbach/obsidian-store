@@ -8,3 +8,9 @@
 [Alt] + [PrintScreen] を押下しながら
 [R] + [S] + [E] + [I] + [U] + [B]
 
+翻訳
+```terminal
+$ apt install translate-shell -y
+$ gh --help | trans -b en:ja
+```
+
