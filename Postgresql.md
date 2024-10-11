@@ -9,3 +9,8 @@ Password for user postgres: secret
 postgres=# 
 ```
 
+```terminal
+$ docker run --name my-postgres --env POSTGRES_PASSWORD=mypassword --detach postgres
+$ docker exec -it my-postgres psql -h localhost -U postgres -d postgres
+```
+

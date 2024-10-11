@@ -2,7 +2,8 @@
 
 Ubuntuコンテナを起動しBashで対話する
 ```terminal
-$ docker container run -it --rm ubuntu bash
+$ docker run -d -it --name ubuntu-sample ubuntu
+$ docker exec -it ubuntu-sample bin/bash
 ```
 
 イメージ、コンテナ、ネットワーク、ボリュームを削除
