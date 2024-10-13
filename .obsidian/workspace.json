@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ee04f9dd1dfcaa68",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Playwright.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "dc36aea60808ef05",
             "type": "leaf",
             "state": {
@@ -31,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -178,11 +165,11 @@
   },
   "active": "dc36aea60808ef05",
   "lastOpenFiles": [
-    "Docker.md",
-    "Postgresql.md",
     "Vitest.md",
-    "Snippets.md",
     "Playwright.md",
+    "Postgresql.md",
+    "Docker.md",
+    "Snippets.md",
     "Ubuntu.md",
     "ESLint.md",
     "Kali Linux.md",

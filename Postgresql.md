@@ -65,5 +65,9 @@ $ docker compose down
 ログインできるのか確認せよ
 ```
 $ docker compose exec -it db bash
+// psql -h "ホスト名" -U "ユーザー名" -p "ポート番号" -d "DB名"
+$ psql -h localhost -U postgres -p 5432 -d sample
 ```
+
+
 
