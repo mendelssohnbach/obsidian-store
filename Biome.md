@@ -12,11 +12,46 @@ $ npx @biomejs/biome init
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "format-check": "biome format ./src",
-    "format": "biome format --write ./src",
-    "lint-check": "biome lint ./src",
-    "lint": "biome lint --write ./src",
-    "biome:all": "npm run format && npm run lint"
+    "lint": "biome lint --write ./src/",
+    "format": "biome format ./src/",
+    "check": "biome check --write ./src/"
   },
 ```
+
+`biome.json`
+```json
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.3/schema.json",
+  "vcs": {
+    "enabled": false,
+    "clientKind": "git",
+    "useIgnoreFile": false
+  },
+  "files": {
+    "include": ["./*.js", "./*.mjs", "./*.ts", "./*.tsx", "./*.json"],
+    "ignoreUnknown": false,
+    "ignore": ["node_modules", "public", ".next"]
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space"
+  },
+  "organizeImports": {
+    "enabled": true
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single"
+    }
+  }
+}
+```
+
+
 

@@ -1,44 +1,88 @@
 #js 
 
-インストール
+レガシースタイル
 ```terminal
 $ npm init @eslint/config@latest
 ```
 
-`eslint.config.mjs`
-```javascript
-import globals from "globals";
-import pluginJs from "@eslint/js";
+インストール
+```terminal
+$ $ npm i -D eslint@8.57.0 eslint-config-next eslint-config-prettier eslint-plugin-tailwindcss eslint-plugin-unused-imports @typescript-eslint/parser
+$ npm i -D prettier @ianvs/prettier-plugin-sort-imports prettier-plugin-tailwindcss
+```
 
-
-  export default [
-  {
-    files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'],
-    rules: {
-      'no-eval': ['error'],
-    },
-  },
-  { languageOptions: { parserOptions: { ecmaFeatures: { jsx: true } } } },
-  { languageOptions: { globals: globals.browser } },
-  pluginJs.configs.recommended,
-  ...
-];
-
-// 最後に追加するパターン
-  pluginReact.configs.flat.recommended,
-  {
-    rules: {
-      "no-eval": ["error"]
+`.eslintrc.json`
+```json
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
     }
-  }
-];
+  },
+  "plugins": ["tailwindcss", "unused-imports"],
+  "root": true,
+  "extends": [
+    "next/core-web-vitals",
+    "next/typescript",
+    "prettier",
+    "plugin:tailwindcss/recommended"
+  ],
+  "rules": {
+    "tailwindcss/no-custom-classname": "off",
+    "unused-imports/no-unused-imports": "warn",
+    "unused-imports/no-unused-vars": "warn",
+    "@typescript-eslint/no-unused-vars": "warn"
+  },
+  "settings": {
+    "tailwindcss": {
+      "callees": ["cn"],
+      "config": "./tailwind.config.ts"
+    },
+    "next": {
+      "rootDir": ["./src/"]
+    }
+  },
+  "ignorePatterns": ["node_modules/", ".next/", "assets/", "public/"]
+}
+```
+
+`.prettierrc.json`
+```json
+{
+  "arrowParens": "always",
+  "bracketSameLine": false,
+  "bracketSpacing": true,
+  "embeddedLanguageFormatting": "auto",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "jsxSingleQuote": false,
+  "printWidth": 100,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleAttributePerLine": true,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "tailwindConfig": "./tailwind.config.ts",
+  "plugins": ["@ianvs/prettier-plugin-sort-imports", "prettier-plugin-tailwindcss"]
+}
 ```
 
 `package.json`
 ```json
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint src/**/*.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write './src/**/*.{ts,tsx}'",
+    "lint:fix": "next lint --fix && format"
   },
 ```
 
