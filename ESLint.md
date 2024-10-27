@@ -14,7 +14,7 @@ $ npm i -D prettier @ianvs/prettier-plugin-sort-imports prettier-plugin-tailwind
 `.eslintrc.json`
 ```json
 {
-  "parser": "@typescript-eslint/parser",
+  "parser": "@typescript-eslint/parser","env
   "parserOptions": {
     "ecmaVersion": 2021,
     "sourceType": "module",

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Playwright.md",
+                "file": "Snippets.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Playwright"
+              "title": "Snippets"
             }
           }
         ]
@@ -183,10 +183,11 @@
   },
   "active": "dc36aea60808ef05",
   "lastOpenFiles": [
-    "ESLint.md",
-    "Biome.md",
+    "Snippetsaaa.md",
     "Playwright.md",
+    "ESLint.md",
     "Vitest.md",
+    "Biome.md",
     "Snippets.md",
     "Postgresql.md",
     "Docker.md",

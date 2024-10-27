@@ -1,22 +1,62 @@
 #js 
 
-`~/.config/Code/User/snippets/mysnippet.code-snippets`
-```json: mysnippet.code-snippets
-{
-    "React useState": {
-      "prefix": "us",,
-    "Async React Function Component": {
-      "prefix": "arfc",
-    "Async React Function Component with Props": {
-      "prefix": "arfcp",
-    "React Function Component": {
-      "prefix": "mrfc",
-    "React Function Component with Props": {
-      "prefix": "mrfcp",
-    "React export default function": {
-      "prefix": "redf",
-    "Next JSON Response": {
-      "prefix": "nget",
+`us`
+```javascript
+const [, set] = useState();
+```
+
+`afrc`
+```javascript
+const  = async () => {
+  return ;
+};
+
+export default ;
+```
+
+`afrc`
+```javascript
+interface Props {}
+
+const  = async ({}: Props) => {
+  return ;
+};
+
+export default ;
+```
+
+`mrfc`
+```javascript
+const  = () => {
+  return ;
+};
+
+export default ;
+```
+
+`mrfc`
+```javascript
+interface Props {}
+
+const  = ({}: Props) => {
+  return ;
+};
+
+export default ;
+```
+
+`redf`
+```javascript
+export default function snippets() {
+  return <div>snippets</div>;
 }
 ```
 
+`nget`
+```javascript
+import { NextResponse } from 'next/server';
+
+export async function GET(request: Request) {
+  return NextResponse.json({ message: '' });
+}
+```
