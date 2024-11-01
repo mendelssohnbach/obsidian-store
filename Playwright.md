@@ -1,5 +1,9 @@
 #js 
 
+```
+$ npm init playwright@latest
+```
+
 `package.json`
 ```json
   "scripts": {
