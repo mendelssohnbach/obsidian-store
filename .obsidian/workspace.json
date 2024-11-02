@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ESLint.md",
+                "file": "Vitest.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ESLint"
+              "title": "Vitest"
             }
           }
         ]
@@ -183,9 +183,9 @@
   },
   "active": "dc36aea60808ef05",
   "lastOpenFiles": [
+    "ESLint.md",
     "Playwright.md",
     "Vitest.md",
-    "ESLint.md",
     "Snippets.md",
     "Snippetsaaa.md",
     "Biome.md",

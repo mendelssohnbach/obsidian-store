@@ -31,9 +31,11 @@ import tsconfigPaths from "vite-tsconfig-paths";
 export default defineConfig({
   plugins: [react(), tsconfigPaths()],
   test: {
+    globals: true,
     environment: "happy-dom",
     setupFiles: ["./vitest-setup.ts"],
-    globals: true,
+    // テストパターン
+    include: ['src/**/*.test.ts', 'src/**/*.test.tsx'],
   },
 }); 
 ```
@@ -49,7 +51,7 @@ export default defineConfig({
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
-    "types": ["vitest/globals"],// 追記1
+    "types": ["vitest/globals", "vitest", "@testing-library/jest-dom"],// 追記1
     "baseUrl": "./",// 追記2
     "paths": {
       "@/*": ["src/*"],
