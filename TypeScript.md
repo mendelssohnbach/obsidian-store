@@ -29,3 +29,11 @@ $ npm run start
 $ npm run build // build js file
 ```
 
+Node.jsによる実験的サポート
+```terminal
+実験的サポート
+$ node --experimental-strip-types example.ts
+実験的サポート with enum
+$ node --experimental-strip-types --experimental-transform-types another-example.ts
+```
+
