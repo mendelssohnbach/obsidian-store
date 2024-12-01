@@ -2,11 +2,16 @@
 ## vite + TypeScript + SWC
 [Vitest導入ガイド](https://sakublog.tech/tips/vitest-react-setup/)
 インストール
-```typescript
+```terminal
 $ npm create vite@latest
 $ cd <PROJECT_DIR>
 $ npm i
-$ npm install -D @testing-library/jest-dom @testing-library/react @testing-library/user-event @vitest/coverage-v8 happy-dom vitest vite-tsconfig-paths
+$ npm install -D @testing-library/jest-dom @testing-library/react @testing-library/user-event @vitest/coverage-v8 happy-dom vitest vite-tsconfig-paths @vitest/eslint-plugin
+```
+
+ブラウザモード
+```terminal
+$ npx vitest init browser
 ```
 
 `vitest-setup.ts`
@@ -38,6 +43,38 @@ export default defineConfig({
     include: ['src/**/*.test.ts', 'src/**/*.test.tsx'],
   },
 }); 
+```
+
+`eslint.config.ts`
+```typescript
+import js from '@eslint/js';
+import vitest from '@vitest/eslint-plugin';
+import reactHooks from 'eslint-plugin-react-hooks';
+import reactRefresh from 'eslint-plugin-react-refresh';
+import globals from 'globals';
+import tseslint from 'typescript-eslint';
+
+export default tseslint.config(
+  { ignores: ['dist'] },
+  {
+    extends: [js.configs.recommended, ...tseslint.configs.recommended],
+    files: ['**/*.{ts,tsx}'],
+    languageOptions: {
+      ecmaVersion: 2020,
+      globals: globals.browser,
+    },
+    plugins: {
+      'react-hooks': reactHooks,
+      'react-refresh': reactRefresh,
+      vitest,
+    },
+    rules: {
+      ...reactHooks.configs.recommended.rules,
+      ...vitest.configs.recommended.rules,
+      'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
+    },
+  }
+);
 ```
 
 `tsconfig.app.json`
@@ -81,10 +118,38 @@ export default defineConfig({
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint": "eslint . --config ./eslint.config.js --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "typecheck": "vitest --typecheck"
+    "typecheck": "vitest --typecheck",
+    "test:browser": "vitest --workspace=vitest.workspace.ts"
   }, 
+```
+
+`vitest.workspace.ts`
+```typescript
+import { defineWorkspace } from 'vitest/config';
+
+export default defineWorkspace([
+  // If you want to keep running your existing tests in Node.js, uncomment the next line.
+  // 'vite.config.ts',
+  {
+    extends: 'vite.config.ts',
+    test: {
+      include: ['src/**/*.browser.test.tsx'],
+      browser: {
+        enabled: true,
+        name: 'chrome',
+        provider: 'preview',
+      },
+    },
+  },
+]);
+```
+
+テストファイル雛形
+```TypeScript
+import { render, screen } from '@testing-library/react';
+import { expect, test } from 'vitest';
 ```
