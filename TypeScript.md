@@ -18,8 +18,9 @@ $ touch src/index.ts
 "scripts": {
     "start": "npm run build:live",
     "build": "tsc -p .",
-    "build:live": "nodemon --watch 'src/**/*.ts' --exec \"ts-node\" src/index.ts",
-    "check": "tsc --noEmit"
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec \"ts-node\" src/*.ts",
+    "check": "tsc --noEmit",
+    "check:live": "tsc --noEmit --watch"
   },
 ```
 

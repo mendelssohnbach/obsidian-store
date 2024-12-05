@@ -34,7 +34,9 @@ $ npm i -D prettier @ianvs/prettier-plugin-sort-imports prettier-plugin-tailwind
     "tailwindcss/no-custom-classname": "off",
     "unused-imports/no-unused-imports": "warn",
     "unused-imports/no-unused-vars": "warn",
-    "@typescript-eslint/no-unused-vars": "warn"
+    "@typescript-eslint/no-unused-vars": "warn",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
   },
   "settings": {
     "tailwindcss": {

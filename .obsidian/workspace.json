@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ESLint.md",
+                "file": "Vitest.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ESLint"
+              "title": "Vitest"
             }
           }
         ]
@@ -183,12 +183,13 @@
   },
   "active": "650e9ec18d459b52",
   "lastOpenFiles": [
+    "TypeScript.md",
+    "ESLint.md",
+    "Docker.md",
     "Vitest.md",
     "Playwright.md",
     "MarkupLint.md",
-    "TypeScript.md",
     "Kali Linux.md",
-    "ESLint.md",
     "Snippets.md",
     "Tailwind.md",
     "Ubuntu.md",
@@ -198,7 +199,6 @@
     "Biome.md",
     "Snippetsaaa.md",
     "Postgresql.md",
-    "Docker.md",
     "Welcome.md",
     "2024-09-27.md"
   ]
