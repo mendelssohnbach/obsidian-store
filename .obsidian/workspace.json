@@ -183,10 +183,10 @@
   },
   "active": "650e9ec18d459b52",
   "lastOpenFiles": [
-    "TypeScript.md",
     "ESLint.md",
-    "Docker.md",
     "Vitest.md",
+    "TypeScript.md",
+    "Docker.md",
     "Playwright.md",
     "MarkupLint.md",
     "Kali Linux.md",
