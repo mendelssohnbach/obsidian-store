@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vitest.md",
+                "file": "Tailwind.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Vitest"
+              "title": "Tailwind"
             }
           }
         ]
@@ -183,8 +183,8 @@
   },
   "active": "650e9ec18d459b52",
   "lastOpenFiles": [
-    "ESLint.md",
     "Vitest.md",
+    "ESLint.md",
     "TypeScript.md",
     "Docker.md",
     "Playwright.md",
