@@ -8,35 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "650e9ec18d459b52",
+            "id": "798d59a3c7db5997",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tailwind.md",
+                "file": "Shell.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tailwind"
-            }
-          },
-          {
-            "id": "0ebe362c5e01f5fa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Git.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Git"
+              "title": "Shell"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -56,7 +41,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "ファイルエクスプローラ"
@@ -126,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Biome.md",
+                "file": "Shell.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +122,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Biomeへのバックリンク"
+              "title": "Shellへのバックリンク"
             }
           },
           {
@@ -172,13 +158,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Biome.md"
+                "file": "Shell.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Biomeのアウトライン"
+              "title": "Shellのアウトライン"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -196,25 +186,26 @@
       "workspaces:ワークスペースレイアウトを管理": false
     }
   },
-  "active": "0ebe362c5e01f5fa",
+  "active": "798d59a3c7db5997",
   "lastOpenFiles": [
     "MarkupLint.md",
+    "Shell.md",
+    "Playwright.md",
+    "MySql.md",
+    "Postgresql.md",
     "Git.md",
     "ESLint.md",
-    "MySql.md",
     "Ubuntu.md",
     "Tailwind.md",
     "Vitest.md",
     "TypeScript.md",
     "Docker.md",
-    "Playwright.md",
     "Kali Linux.md",
     "Snippets.md",
     "Next.js.md",
     "Obisidianの使い方.md",
     "Biome.md",
     "Snippetsaaa.md",
-    "Postgresql.md",
     "Welcome.md",
     "2024-09-27.md"
   ]
