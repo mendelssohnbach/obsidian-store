@@ -149,3 +149,20 @@ export default [
 ];
 ```
 
+## ルール: utf-8
+
+`eslint.config.js`
+**fs.readFile** の **encoding** 引数にて `utf8` 表記を **Error** として扱う
+```
+  {
+    rules: {
+      'no-restricted-syntax': [
+        'error', // 'error' または 'warn' に設定
+        {
+          selector: `CallExpression[callee.object.name='fs'][callee.property.name='readFile'] > ObjectExpression > Property[key.name='encoding'][value.value='utf8']`,
+          message: "Use 'utf-8' instead of 'utf8' for fs.readFile encoding.",
+        },
+      ],
+    },
+  },
+```
