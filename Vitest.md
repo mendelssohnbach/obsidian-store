@@ -1,4 +1,25 @@
 #js
+
+## 最小限の環境
+インストール
+```
+$ npm i -D vitest @vitest/coverage-v8 @types/node
+```
+
+関数ファイル内にテストを書く
+```
+export function add(a: number, b: number): number {
+  return a + b;
+}
+
+// *** Test ***
+import { expect, test } from 'vitest';
+if (process.env.NODE_ENV === 'test') {
+  test('1+1=2', () => {
+    expect(add(1, 1)).toBe(2);
+  });
+}
+```
 ## vite + TypeScript + SWC
 [Vitest導入ガイド](https://sakublog.tech/tips/vitest-react-setup/)
 インストール
