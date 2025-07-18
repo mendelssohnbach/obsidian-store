@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git.md",
+                "file": "Vitest.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Git"
+              "title": "Vitest"
             }
           }
         ]
@@ -188,8 +188,9 @@
   },
   "active": "bf3e147e546a2c73",
   "lastOpenFiles": [
-    "2025-07-05.md",
+    "ESLint.md",
     "Git.md",
+    "2025-07-05.md",
     "Biome.md",
     "Docker.md",
     "Welcome.md",
@@ -201,7 +202,6 @@
     "Shell.md",
     "Playwright.md",
     "Postgresql.md",
-    "ESLint.md",
     "Tailwind.md",
     "Vitest.md",
     "TypeScript.md",
