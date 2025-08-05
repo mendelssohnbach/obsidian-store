@@ -1,5 +1,10 @@
 #docker
 
+デーモンの状態確認
+```
+$ sudo systemctl status docker 
+```
+
 Ubuntuコンテナを起動しBashで対話する
 ```terminal
 $ docker run -d -it --name ubuntu-sample ubuntu
