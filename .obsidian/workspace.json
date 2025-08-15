@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Brew.md",
+                "file": "Next.js.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Brew"
+              "title": "Next.js"
             }
           }
         ],
@@ -231,8 +231,9 @@
   },
   "active": "0b9717fd62bd6efe",
   "lastOpenFiles": [
-    "Docker.md",
+    "Git/Git_message.md",
     "Brew.md",
+    "Docker.md",
     "Biome.md",
     "Postgresql.md",
     "Naming Convention.md",
@@ -241,7 +242,6 @@
     "Tools.md",
     "Tailwind.md",
     "Shell.md",
-    "Git/Git_message.md",
     "Gemini.md",
     "Git/Git_basic.md",
     "Git",
