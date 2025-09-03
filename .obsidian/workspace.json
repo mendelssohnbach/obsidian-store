@@ -41,16 +41,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git/GitHub_CLI.md",
+                "file": "Brew.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GitHub_CLI"
+              "title": "Brew"
+            }
+          },
+          {
+            "id": "8db431f338531fe8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Act.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Act"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -104,7 +118,8 @@
               "title": "ブックマーク"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "f5af54fec4b8e657",
@@ -216,17 +231,18 @@
       "workspaces:ワークスペースレイアウトを管理": false
     }
   },
-  "active": "fca5a37e0bc9ba3e",
+  "active": "c6b244cec887ae99",
   "lastOpenFiles": [
+    "Mise.md",
+    "Act.md",
+    "Brew.md",
+    "Git/GitHub_CLI.md",
     "MySql.md",
     "Git/Git_basic.md",
     "Git/Git_message.md",
-    "Git/GitHub_CLI.md",
     "ESLint.md",
-    "Mise.md",
     "Vitest.md",
     "Next.js.md",
-    "Brew.md",
     "Docker.md",
     "Biome.md",
     "Postgresql.md",
@@ -243,7 +259,6 @@
     "Playwright.md",
     "TypeScript.md",
     "Kali Linux.md",
-    "Snippets.md",
-    "Snippetsaaa.md"
+    "Snippets.md"
   ]
 }
