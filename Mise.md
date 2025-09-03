@@ -1,4 +1,4 @@
-#tool
+#tools
 
 パッケージインストール
 ```Terminal
