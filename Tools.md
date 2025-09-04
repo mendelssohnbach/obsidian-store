@@ -1,4 +1,4 @@
-#Tool
+#tools
 
 [sixv](https://xyb3rt.github.io/sxiv/sxiv.1.html)
 
