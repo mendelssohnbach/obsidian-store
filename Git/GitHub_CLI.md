@@ -22,7 +22,7 @@ $ gh browse
 
 プルリクエストを作成
 ```terminal
-$ gh pr create --assignee @me --title 'Happy' --body 'Happy Text'
+$ gh pr create --assignee @me --title "New feature" --body "Description of new feature"
 ```
 
 プルリクエストを作成、`body` はブラウザで記述
@@ -30,12 +30,32 @@ $ gh pr create --assignee @me --title 'Happy' --body 'Happy Text'
 $ gh pr create --assignee @me --title 'Happy' --web
 ```
 
+プルリクエスト一覧
+```terminal
+$ gh pr list
+```
+
 プルリクエストをマージ
 ```terminal
-$ gh pr merage 123
+$ gh pr merage PR_NUMBER
+```
+
+イシューを作成
+```terminal
+$ gh issue create --title "Bug report" --body "Description of the bug"
+```
+
+未解決イシュー一覧
+```
+$ gh issue list
 ```
 
 ワークフロー一覧
 ```terminal
 $ gh workflow list
+```
+
+ワークフローをトリガー
+```terminal
+$ gh workflow run WORKFLOW_NAME
 ```
