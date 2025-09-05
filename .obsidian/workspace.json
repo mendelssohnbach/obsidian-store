@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git/GitHub_CLI.md",
+                "file": "TypeScript.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GitHub_CLI"
+              "title": "TypeScript"
             }
           }
         ],
@@ -246,6 +246,7 @@
   },
   "active": "4b8beb4442b98da3",
   "lastOpenFiles": [
+    "Git/GitHub_CLI.md",
     "Curl.md",
     "Tools.md",
     "Biome.md",
@@ -257,7 +258,6 @@
     "Act.md",
     "Mise.md",
     "Brew.md",
-    "Git/GitHub_CLI.md",
     "MySql.md",
     "ESLint.md",
     "Vitest.md",
