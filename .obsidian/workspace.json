@@ -69,16 +69,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TypeScript.md",
+                "file": "ESLint/ESLint.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TypeScript"
+              "title": "ESLint"
+            }
+          },
+          {
+            "id": "5d5a47890c6b5ec6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Brew.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Brew"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -244,22 +258,25 @@
       "workspaces:ワークスペースレイアウトを管理": false
     }
   },
-  "active": "4b8beb4442b98da3",
+  "active": "5d5a47890c6b5ec6",
   "lastOpenFiles": [
+    "無題のファイル.base",
+    "Brew.md",
+    "ESLint/Basic_rule.md",
+    "ESLint/ESLint.md",
+    "Git/Git_message.md",
+    "ESLint",
     "Git/GitHub_CLI.md",
+    "無題のファイル 1.base",
+    "無題のファイル.canvas",
+    "TypeScript.md",
+    "Mise.md",
+    "Act.md",
     "Curl.md",
     "Tools.md",
     "Biome.md",
-    "Git/Git_message.md",
     "Git/Git_basic.md",
-    "無題のファイル.canvas",
-    "無題のファイル 1.base",
-    "無題のファイル.base",
-    "Act.md",
-    "Mise.md",
-    "Brew.md",
     "MySql.md",
-    "ESLint.md",
     "Vitest.md",
     "Next.js.md",
     "Docker.md",
@@ -272,9 +289,6 @@
     "Git",
     "Welcome.md",
     "Ubuntu.md",
-    "Obisidianの使い方.md",
-    "Playwright.md",
-    "TypeScript.md",
-    "Kali Linux.md"
+    "Obisidianの使い方.md"
   ]
 }

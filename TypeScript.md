@@ -39,3 +39,20 @@ $ node --experimental-strip-types example.ts
 $ node --experimental-strip-types --experimental-transform-types another-example.ts
 ```
 
+`tsConfig.json`
+```josn
+{
+  "compilerOptions": {
+    // d.ts型定義を出力
+    "declaration": true,
+    // d.ts型ファイルのソースマップ出力
+    "declarationMap": true,
+    // jsファイルを出力せず、型定義のみ出力
+    // compsiteまたｈdeclarationの指定が必要
+    "emitDeclarationOnly": true
+    // 型チェック機能のみ有効
+    "noEmit": true
+  }
+}
+```
+
