@@ -90,9 +90,35 @@
               "icon": "lucide-file",
               "title": "Brew"
             }
+          },
+          {
+            "id": "e4e7a0defbbc4dba",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.11.7"
+            }
+          },
+          {
+            "id": "98e1c545a264dfc9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ClaudeCode.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ClaudeCode"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -258,8 +284,10 @@
       "workspaces:ワークスペースレイアウトを管理": false
     }
   },
-  "active": "5d5a47890c6b5ec6",
+  "active": "98e1c545a264dfc9",
   "lastOpenFiles": [
+    "TypeScript.md",
+    "ClaudeCode.md",
     "無題のファイル.base",
     "Brew.md",
     "ESLint/Basic_rule.md",
@@ -269,7 +297,6 @@
     "Git/GitHub_CLI.md",
     "無題のファイル 1.base",
     "無題のファイル.canvas",
-    "TypeScript.md",
     "Mise.md",
     "Act.md",
     "Curl.md",
