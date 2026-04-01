@@ -10,6 +10,13 @@ $ gh auth status
 $ gh repo create demo-repo --private --add-readme -c
 ```
 
+プロジェクト名でリモートリポジトリを作成
+```terminal
+$ git add . && git commit
+$ gh repo create --source=. --push --public
+$ gh repo rename # レポジトリ名変更
+```
+
 プルリクエスト一覧(対象プロジェクト内で)
 ```terminal
 $ gh pr list
