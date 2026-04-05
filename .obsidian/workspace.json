@@ -151,12 +151,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ClaudeCode.md",
+                "file": "TypeScript.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ClaudeCode"
+              "title": "TypeScript"
             }
           }
         ],
@@ -328,17 +328,17 @@
   },
   "active": "9181cfb2fccd1f04",
   "lastOpenFiles": [
+    "Ubuntu.md",
+    "Shell.md",
+    "ClaudeCode.md",
     "Postgresql.md",
     "Git/GitHub_CLI.md",
     "Brew.md",
     "Utls/PDF.md",
     "Docker.md",
     "PDF.md",
-    "ClaudeCode.md",
     "Utls",
-    "Shell.md",
     "Snippets.md",
-    "Ubuntu.md",
     "Curl.md",
     "Biome.md",
     "Act.md",

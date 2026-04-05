@@ -47,6 +47,19 @@
 }
 ```
 
+## LSPと日本語の設定
+
+```json
+// ~/.claude/settings.json に以下を追加
+{
+  "ENABLE_LSP.TOOLS": true,
+  "system_prompt": "あなたは熟練したソフトウェアエンジニアです。すべての会話とコードコメントは日本語で行ってください。",
+  "enabledPlugins": {
+    "typescript-lsp@claude-plugins-official": true
+  }
+}
+```
+
 **Claude Code** をリセット
 ```
 $ claude code
