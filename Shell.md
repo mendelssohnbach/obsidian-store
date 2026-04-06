@@ -7,7 +7,7 @@ $ history -c && history -w
 
 **Bash** 厳格モード
 ```bash
-#!/bin/bash
+#!/usr/bin/env bash
 set -euo pipefail
 IFS=$'\n\t'
 ```

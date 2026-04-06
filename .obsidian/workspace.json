@@ -151,12 +151,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TypeScript.md",
+                "file": "Shell.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TypeScript"
+              "title": "Shell"
             }
           }
         ],
@@ -328,6 +328,7 @@
   },
   "active": "9181cfb2fccd1f04",
   "lastOpenFiles": [
+    "TypeScript.md",
     "Ubuntu.md",
     "Shell.md",
     "ClaudeCode.md",
@@ -345,7 +346,6 @@
     "Playwright.md",
     "2026-03-13.md",
     "Obisidianの使い方.md",
-    "TypeScript.md",
     "Vitest.md",
     "Naming Convention.md",
     "Tools.md",
