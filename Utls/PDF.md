@@ -24,3 +24,15 @@ $ pdfseparate input.pdf page-%d.pdf
 ```
 
 - `%d` にページ番号が入る
+
+## ページ分割で抽出する
+
+```terminal
+$ sudo apt update
+$ sudo apt upgrade -y
+$ sudo apt install pdftk -y
+# 全ページを1ページずつ分割
+$ pdftk input.pdf burst
+# 1ページ目と3~5ページ目だけを抽出
+$ pdftk input.pdf cat 1 3-5 output selected_pages.pdf
+```
