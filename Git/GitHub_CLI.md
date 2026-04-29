@@ -17,6 +17,11 @@ $ gh repo create --source=. --push --public
 $ gh repo rename # レポジトリ名変更
 ```
 
+プッシュとPR作成を同時に行う
+```terminal
+$ gh pr create --fill
+```
+
 プルリクエスト一覧(対象プロジェクト内で)
 ```terminal
 $ gh pr list
