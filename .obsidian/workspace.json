@@ -151,12 +151,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mise.md",
+                "file": "ClaudeCode.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Mise"
+              "title": "ClaudeCode"
             }
           }
         ],
@@ -328,8 +328,8 @@
   },
   "active": "9181cfb2fccd1f04",
   "lastOpenFiles": [
-    "ClaudeCode.md",
     "Mise.md",
+    "ClaudeCode.md",
     "Brew.md",
     "Git/GitHub_CLI.md",
     "Shell.md",

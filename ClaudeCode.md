@@ -32,6 +32,7 @@
 /sandbox # サンドボックス環境
 /mcp # mcpサーバー一覧表示
 /terminal-setup # Shift+Enterによる改行を有効にする
+/settings # settings.josonの確認をする
 ```
 
 ## MCPを安全に使う
